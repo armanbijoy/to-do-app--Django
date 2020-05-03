@@ -1,0 +1,8 @@
+<p>Do You Want To Delete "{{item.title}}"</p>
+<form method="POST">
+    {% csrf_token %}
+
+    <a href="{% url 'index' %}">Cancel</a>
+    <input type="submit" value="Delete">
+
+</form>
